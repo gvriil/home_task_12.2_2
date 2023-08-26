@@ -6,6 +6,7 @@ def test_get(create_set):
     assert arrs.get([], 0, "test") == "test"
 
 
+
 def test_slice(create_set):
     assert arrs.my_slice(create_set, 1, 3) == [2, 3]
     assert arrs.my_slice(create_set, 1) == [2, 3, 4]
@@ -14,3 +15,4 @@ def test_slice(create_set):
     assert arrs.my_slice(create_set, 1, 5) == [2, 3, 4]
     assert arrs.my_slice([], 0, 0) == []
     assert arrs.my_slice(create_set) == [1, 2, 3, 4]
+
